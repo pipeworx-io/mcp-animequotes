@@ -1,35 +1,57 @@
-# @pipeworx/mcp-animequotes
+# mcp-animequotes
 
-MCP server for [Animechan](https://animechan.io) — random anime quotes, search by anime series or character name. Free, no auth required.
+AnimeQuotes MCP — wraps animechan.io (free, no auth)
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `random_quote` | Get a random anime quote |
-| `search_by_anime` | Get quotes from a specific anime series |
-| `search_by_character` | Get quotes from a specific character |
+| `random_quote` | Get a random anime quote. Returns quote text, character name, and anime series title. |
+| `search_by_anime` | Search for quotes from a specific anime series by title (e.g., "Attack on Titan"). Returns matching quotes with character and series info. |
+| `search_by_character` | Search for quotes by anime character name (e.g., "Naruto Uzumaki"). Returns matching quotes with character, series, and quote text. |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
   "mcpServers": {
     "animequotes": {
-      "type": "url",
-      "url": "https://gateway.pipeworx.io/animequotes"
+      "url": "https://gateway.pipeworx.io/animequotes/mcp"
     }
   }
 }
 ```
 
-## CLI Usage
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx @anthropic-ai/mcp-client https://gateway.pipeworx.io/animequotes
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Animequotes data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
