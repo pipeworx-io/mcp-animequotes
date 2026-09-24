@@ -1,10 +1,32 @@
 {
   "name": "@pipeworx/mcp-animequotes",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "AnimeQuotes MCP — wraps animechan.io (free, no auth)",
   "type": "module",
-  "license": "MIT",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-animequotes": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "animequotes"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-animequotes.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-443be35a45802cadaa4d844c0861cd75012435d81609c5bd81ab6598e865d310",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
