@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-animequotes",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "AnimeQuotes MCP — wraps animechan.io (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2bb21c17827ba43f380c38d0beb9af337812700142a051b394361fffddf05877",
-    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
+    "sourceHash": "v1-9e3a1a2738b842b15c2cc66ee814c7a6e27b79ee6a217f1ff3d5c1495c5ed678",
+    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
   }
 }

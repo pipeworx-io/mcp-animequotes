@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/animequotes",
   "title": "Animequotes",
   "description": "AnimeQuotes MCP — wraps animechan.io (free, no auth)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "websiteUrl": "https://pipeworx.io/packs/animequotes",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-animequotes",
