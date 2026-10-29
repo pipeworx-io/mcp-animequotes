@@ -1,0 +1,42 @@
+[
+  {
+    "name": "random_quote",
+    "description": "Get a random anime quote. Returns quote text, character name, and anime series title.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "search_by_anime",
+    "description": "Search for quotes from a specific anime series by title (e.g., \"Attack on Titan\"). Returns matching quotes with character and series info.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "anime": {
+          "type": "string",
+          "description": "Name of the anime series (e.g., \"Naruto\", \"Attack on Titan\")"
+        }
+      },
+      "required": [
+        "anime"
+      ]
+    }
+  },
+  {
+    "name": "search_by_character",
+    "description": "Search for quotes by anime character name (e.g., \"Naruto Uzumaki\"). Returns matching quotes with character, series, and quote text.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "character": {
+          "type": "string",
+          "description": "Name of the anime character (e.g., \"Naruto Uzumaki\", \"Levi Ackerman\")"
+        }
+      },
+      "required": [
+        "character"
+      ]
+    }
+  }
+]
